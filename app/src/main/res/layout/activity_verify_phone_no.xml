@@ -22,13 +22,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bungee"
-            android:text="Verify Phone No"
+            android:text="@string/verify_phone_no"
             android:textAlignment="center"
             android:textSize="30sp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter verification code if not automatically authenticated."
+            android:text="@string/enter_verification_code_if_not_automatically_authenticated"
             android:textAlignment="center"
             android:textSize="14sp"
             android:minHeight="48dp"
@@ -44,7 +44,7 @@
                 android:id="@+id/verification_code_entered_by_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter OTP"
+                android:hint="@string/enter_otp"
                 android:minHeight="48dp" />
 
             <Button
