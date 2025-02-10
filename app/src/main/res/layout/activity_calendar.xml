@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter Place"
+        android:text="Enter the Place"
         android:fontFamily="@font/bungee"
         android:textSize="18sp"
         android:textStyle="bold"
