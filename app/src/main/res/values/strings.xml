@@ -2,5 +2,7 @@
     <string name="app_name">Packing List App</string>
     <string name="verify_button_text">Verify</string>
     <string name="category_description">Easily Pack...</string>
+    <string name="hello_there_welcome_back">Hello there, Welcome Back</string>
+    <string name="sign_in_to_continue">Sign In to continue</string>
 
 </resources>
