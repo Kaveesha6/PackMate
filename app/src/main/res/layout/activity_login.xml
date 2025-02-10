@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bungee"
-        android:text="Hello there, Welcome Back"
+        android:text="@string/hello_there_welcome_back"
         android:textColor="#FF000000"
         android:textSize="40sp"
         android:transitionName="logo_text" />
@@ -30,7 +30,7 @@
         android:id="@+id/slogan_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In to continue"
+        android:text="@string/sign_in_to_continue"
         android:textSize="18sp"
         android:transitionName="logo_desc"/>
 
