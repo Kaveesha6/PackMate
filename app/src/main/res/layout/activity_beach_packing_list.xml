@@ -276,7 +276,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="10sp"
-                    android:text="Swim Bag " />
+                    android:text="Sunscreen" />
 
                 <CheckBox
                     android:layout_width="match_parent"
