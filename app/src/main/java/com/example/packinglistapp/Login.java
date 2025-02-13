@@ -1,5 +1,6 @@
 package com.example.packinglistapp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,15 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick (View v){
                 Intent intent = new Intent(Login.this, Home.class);
+                startActivity(intent);
+            }
+        });
+
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button btnNewUser = findViewById(R.id.new_user_btn);
+        btnNewUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, SignUp.class);
                 startActivity(intent);
             }
         });
