@@ -38,7 +38,7 @@
         android:layout_width="253dp"
         android:layout_height="70dp"
         android:layout_marginTop="28dp"
-        android:text="Now you can pack your bagpack for new journey for you in this App. You can enjoy in App."
+        android:text="Now you can pack your bagpack for new journey in this App. You can enjoy in App."
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
