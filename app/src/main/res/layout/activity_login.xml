@@ -6,66 +6,121 @@
     android:layout_height="match_parent"
     tools:context=".Login"
     android:orientation="vertical"
-    android:background="#fff"
+    android:background="@color/green"
     android:padding="20dp">
 
+
     <ImageView
-        android:id="@+id/logo_image"
-        android:layout_width="140dp"
-        android:layout_height="138dp"
-        android:src="@drawable/logo"
-        android:transitionName="logo_image" />
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_banner" />
 
     <TextView
-        android:id="@+id/logo_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_width="379dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="4dp"
         android:fontFamily="@font/bungee"
-        android:text="@string/hello_there_welcome_back"
-        android:textColor="#FF000000"
-        android:textSize="40sp"
-        android:transitionName="logo_text" />
+        android:text="Login to Your Account"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/slogan_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="169dp"
+        android:layout_height="35dp"
         android:text="@string/sign_in_to_continue"
         android:textSize="18sp"
-        android:transitionName="logo_desc"/>
+        android:transitionName="logo_desc"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="257dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/facebook"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="294dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/google1"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="294dp"
+            tools:ignore="MissingConstraints"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/twitter"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="208dp"
+            tools:layout_editor_absoluteY="294dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="317dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/username"
             android:hint="Username"
-            android:transitionName="logo_text"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:transitionName="logo_text">
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/password"
             android:hint="Password"
-            app:passwordToggleEnabled="true"
             android:transitionName="password_tran"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:passwordToggleEnabled="true">
 
 
             <com.google.android.material.textfield.TextInputEditText
@@ -81,41 +136,39 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_margin="5dp"
-            android:textColor="#FF000000"
             android:background="#00000000"
             android:elevation="0dp"
-            android:text="FORGET PASSWORD?" />
+            android:text="FORGET PASSWORD?"
+            android:textColor="#FF000000" />
 
         <Button
             android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:background="#FF000000"
-            android:textColor="#fff"
-            android:fontFamily="@font/bungee"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:transitionName="button_tran"/>
+            android:background="@drawable/button_background_green2"
+            android:fontFamily="@font/bungee"
+            android:text="Login"
+            android:textColor="#FAF9F6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:transitionName="button_tran" />
 
         <Button
-            android:id="@+id/signup_screen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/new_user_btn"
+            android:layout_width="369dp"
+            android:layout_height="48dp"
             android:layout_gravity="right"
             android:layout_margin="5dp"
             android:background="#00000000"
             android:elevation="0dp"
-            android:text="NEW USER? SIGN UP"
-            android:textColor="#FF000000"
-            android:transitionName="login_signup_tran" />
-
-
-
+            android:textSize="16sp"
+            android:text="New User? SIGNUP"
+            android:textColor="#FF000000" />
 
 
     </LinearLayout>
 
-</LinearLayout>
+
+</LinearLayout >

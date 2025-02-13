@@ -43,7 +43,7 @@
             android:includeFontPadding="false"
             android:textSize="14sp"
             android:layout_toRightOf="@+id/profile_image"
-           android:layout_below="@+id/full_name"
+            android:layout_below="@+id/full_name"
             android:layout_marginLeft="30dp"
             android:textColor="#808080"/>
 
@@ -189,6 +189,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/update"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:background="@color/green"

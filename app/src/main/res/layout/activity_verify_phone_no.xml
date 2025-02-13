@@ -17,22 +17,24 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo2" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bungee"
-            android:text="@string/verify_phone_no"
+            android:text="Verify Phone No"
             android:textAlignment="center"
             android:textSize="30sp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/enter_verification_code_if_not_automatically_authenticated"
-            android:textAlignment="center"
-            android:textSize="14sp"
             android:minHeight="48dp"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:text="Enter verification code if not automatically authenticated."
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,19 +44,21 @@
 
             <EditText
                 android:id="@+id/verification_code_entered_by_user"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/enter_otp"
+                android:layout_width="310dp"
+                android:layout_height="62dp"
+                android:hint="Enter OTP"
                 android:minHeight="48dp" />
 
             <Button
                 android:id="@+id/verify_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="308dp"
+                android:layout_height="62dp"
                 android:layout_marginTop="20dp"
                 android:background="#fece2f"
+                android:fontFamily="@font/bungee"
+                android:textSize="18sp"
                 android:text="@string/verify_button_text"
-                android:textColor="#455A64" />
+                android:textColor="#FAF9F6" />
 
             <ProgressBar
                 android:id="@+id/progress_bar"
