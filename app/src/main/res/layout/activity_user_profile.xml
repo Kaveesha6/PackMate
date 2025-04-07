@@ -120,6 +120,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:id="@+id/full_name_edit"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/user"
                 android:drawablePadding="10dp"
@@ -139,6 +140,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:id="@+id/email_edit"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/paper_plane"
                 android:drawablePadding="10dp"
@@ -158,6 +160,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:id="@+id/phone_edit"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/add_contact"
                 android:drawablePadding="10dp"
@@ -177,6 +180,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:id="@+id/password_edit"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/password"
                 android:drawablePadding="10dp"

@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Baby Needs Packing List"
+            android:text="Cruise Item List"
             android:fontFamily="@font/antic"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -50,7 +50,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
     <!-- Single RecyclerView for all items -->
     <androidx.recyclerview.widget.RecyclerView
@@ -78,7 +78,7 @@
             android:layout_weight="1"
             android:hint="Enter item to add..."
             android:inputType="text"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
         <Button
             android:id="@+id/buttonAddItem"

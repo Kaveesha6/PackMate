@@ -1,300 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/swim_bg"
-    tools:context=".SwimPackingList">
+    android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/swim_list_view"
-            android:layout_width="342dp"
-            android:layout_height="35dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/bungee"
-            android:text="Swim Packing List"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <GridLayout
-            android:id="@+id/category_list"
+        <!-- Toolbar with back button and title -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/swim_list_view"
-            android:rowCount="2"
-            android:columnCount="2"
-            android:padding="2dp"
-            android:layout_marginBottom="20dp">
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent">
 
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="163dp"
-                    android:layout_height="267dp"
-                    android:layout_row="0"
-                    android:layout_rowWeight="1"
-                    android:layout_column="0"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill"
-                    android:layout_margin="4dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="4dp"
-                    android:background="@color/white">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical|center_horizontal"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/bungee"
-                                    android:text="Essentials"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="12sp"
-                                    android:textStyle="bold" />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Swimsuit" />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Towel " />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Swimming Goggles " />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Swim Cap " />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Flip-flops / Water Shoes " />
-
-
-
-
-                        </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
+                <ImageButton
+                    android:id="@+id/btnBack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_row="0"
-                    android:layout_column="1"
-                    android:layout_gravity="fill"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="back to the category"
+                    android:src="@drawable/ic_back"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="24dp" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:gravity="center"
-                            android:layout_gravity="center_vertical|center_horizontal">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Accessories"
-                                    android:textStyle="bold"
-                                    android:textSize="12sp"
-                                    android:textAlignment="viewStart"
-                                    android:textColor="@android:color/black"
-                                    android:fontFamily="@font/bungee"/>
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Sunscreen (Waterproof)" />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Water Bottle " />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Robe or Cover-up " />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Hairbrush or Comb " />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Change of Clothes" />
-
-
-                        </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
+                <TextView
+                    android:id="@+id/tvTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_row="1"
-                    android:layout_column="0"
-                    android:layout_gravity="fill"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
+                    android:layout_gravity="center"
+                    android:text="Swimming Packing List"
+                    android:fontFamily="@font/antic"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:gravity="center"
-                            android:layout_gravity="center_vertical|center_horizontal">
+        </androidx.appcompat.widget.Toolbar>
 
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Training and Safety Gear"
-                                    android:textStyle="bold"
-                                    android:textSize="12sp"
-                                    android:textColor="@android:color/black"
-                                    android:fontFamily="@font/bungee"/>
+        <!-- Add to checklist-->
+        <Button
+            android:id="@+id/btnAddToCheckList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/greenBlue"
+            android:padding="8dp"
+            android:text="Add to Checklist"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="TextContrastCheck" />
 
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Kickboard" />
+        <!-- Single RecyclerView for all items -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewItems"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btnAddToCheckList"
+            app:layout_constraintBottom_toTopOf="@+id/addItemLayout"/>
 
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Swim Fins " />
+        <!-- Layout for adding new items -->
+        <LinearLayout
+            android:id="@+id/addItemLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="@color/greenBlue"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Pull Buoy " />
+                <EditText
+                    android:id="@+id/editTextAddItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter item to add..."
+                    android:inputType="text"
+                    tools:ignore="TouchTargetSizeCheck" />
 
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Life Jacket " />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Snorkel" />
-
-
-
-
-                        </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
+                <Button
+                    android:id="@+id/buttonAddItem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_row="1"
-                    android:layout_column="1"
-                    android:layout_gravity="fill"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
+                    android:text="Add"/>
+        </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:gravity="center"
-                            android:layout_gravity="center_vertical|center_horizontal">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Personal Care Items"
-                                    android:textStyle="bold"
-                                    android:textSize="12sp"
-                                    android:textColor="@android:color/black"
-                                    android:fontFamily="@font/bungee"/>
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Shampoo and Conditioner" />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Body Wash/Soap " />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Deodorant " />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Swim Bag " />
-
-                                <CheckBox
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="10sp"
-                                    android:text="Swim Bag " />
-
-
-
-
-
-                        </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-        </GridLayout>
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

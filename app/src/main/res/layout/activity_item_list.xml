@@ -11,7 +11,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="#03A9F4"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
@@ -30,36 +30,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Baby Needs Packing List"
-            android:fontFamily="@font/antic"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+            android:text="Basic Needs"
+            android:textColor="#FFFFFF"
             android:textSize="24sp" />
+
 
     </androidx.appcompat.widget.Toolbar>
 
-    <!-- Add to checklist-->
-    <Button
-        android:id="@+id/btnAddToCheckList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/greenBlue"
-        android:padding="8dp"
-        android:text="Add to Checklist"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:ignore="TextContrastCheck" />
-
-    <!-- Single RecyclerView for all items -->
+    <!-- RecyclerView for the list of items -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewItems"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/btnAddToCheckList"
-        app:layout_constraintBottom_toTopOf="@+id/addItemLayout"/>
+        android:background="#FFC0C0"
+        app:layout_constraintBottom_toTopOf="@+id/addItemLayout"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <!-- Layout for adding new items -->
     <LinearLayout
@@ -68,7 +53,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="8dp"
-        android:background="@color/greenBlue"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <EditText
@@ -84,7 +68,8 @@
             android:id="@+id/buttonAddItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add"/>
+            android:text="Add"
+            android:backgroundTint="@color/colorPrimary"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
